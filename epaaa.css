@@ -3,4 +3,11 @@
 
 h1{
     font-family: "Audiowide", sans-serif;
+    background-color: black;
+    color:black;
+}
+
+.font-effect-neon{
+    background-color: black;
+    color:black;
 }
