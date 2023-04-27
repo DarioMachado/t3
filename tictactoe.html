@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .caja{
+           
+            border: 1px black solid;
+            height: 5vw;
+            width: 5vw;
+            background-color: green;
+            text-align: center;
+            padding: 10px;
+            font-size: 50px;
+        }
+        .juego{
+            margin: auto;
+             width: 20%;
+             height:50%;
+            display: flex;
+            gap:10px;
+            
+
+        }
+
+        .contenedor1{
+           
+
+        }
+        .contenedor2{
+           
+        }
+    
+
+    </style>
+</head>
+<body>
+
+
+<div id="turno" style="height:20vh;flex:1">Es el turno de: </div>
+<div class="juego">
+    <div class="contenedor1">
+
+            <div id="a"class="caja"  onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+            <br/>
+            <div id="b"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+            <br/>
+            <div id="c"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+
+    </div>
+        
+    <div class="contenedor2">
+            <div id="d"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+            <br/>
+            <div id="e"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+            <br/>
+            <div id="f"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+    </div>
+
+    <div class="contenedor3">
+            <div id="g"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+            <br/>
+            <div id="h"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+            <br/>
+            <div id="i"class="caja" onmouseover="cambiarColor(this.id)" onmouseout="devolver(this.id)" onclick="comprobar(this.id)"></div>
+    </div>
+   
+
+</div>
+
+
+
+   
+
+
+
+
+  <script>
+
+    var turno = true;
+
+    var poner = [['a',true],
+    ['b',true],
+    ['c',true],
+    ['d',true],
+    ['e',true],
+    ['f',true],
+    ['g',true],
+    ['h',true],
+    ['i',true]]
+
+    var tablero = ["-","-","-","-","-","-","-","-","-"];
+   
+    var contador = 0;
+
+ 
+    function cambiarColor(x){
+       let cambiar = document.getElementById(x)
+       cambiar = cambiar.style.backgroundColor = "yellowgreen";
+
+    }
+    function devolver(x){
+        let cambiar = document.getElementById(x)
+       cambiar = cambiar.style.backgroundColor = "green";
+    }
+
+   
+
+    function repintar(){
+
+    if (turno==true){
+       let turno = document.getElementById("turno");
+       turno.innerHTML = "Es el turno de: Jugador 1"
+
+    }
+    if (turno==false){
+       let turno = document.getElementById("turno");
+       turno.innerHTML = "Es el turno de: Jugador 2"
+
+    }
+
+    }
+
+    function jugar(x){
+        contador +=1;
+         if (turno==true){
+            let cambiar = document.getElementById(x)
+            cambiar.style.color="blue";
+            cambiar.innerHTML="X"
+         }
+         if (turno==false){
+            let cambiar = document.getElementById(x)
+            cambiar.style.color="red";
+            cambiar.innerHTML="O"
+         }
+
+         turno = !turno;
+         repintar();
+         if(contador>3)
+         buscarGanador();
+
+    }
+
+    function comprobar(x){
+        for(let i = 0; 0<10;i++){
+            if(x==poner[i][0]){
+                if(poner[i][1]==true){
+                    poner[i][1]=false;
+                    if(turno==true){
+                    tablero[i] = "X"
+                }
+                if(turno==false){
+                    tablero[i] = "O"
+                }
+                    jugar(x);
+                }
+                if(poner[i][1]==false){
+                    return;
+                }
+            }
+        }
+
+    }
+
+
+    function buscarGanador(){
+        console.log("buscando");
+
+        if(tablero[0]==tablero[1]&&tablero[0]==tablero[2]){
+            if(tablero[0]!="-")
+            alert("Ganador");
+        }   
+        if(tablero[0]==tablero[3]&&tablero[0]==tablero[6]){
+            if(tablero[0]!="-")
+            alert("Ganador");
+        }  
+        if(tablero[6]==tablero[7]&&tablero[6]==tablero[8]){
+            if(tablero[6]!="-")
+            alert("Ganador");
+        }  
+        if(tablero[2]==tablero[5]&&tablero[2]==tablero[8]){
+            if(tablero[2]!="-")
+            alert("Ganador");
+        }  
+        //diagonal
+        if(tablero[0]==tablero[4]&&tablero[0]==tablero[8]){
+            if(tablero[0]!="-")
+            alert("Ganador");
+        }  
+        if(tablero[2]==tablero[4]&&tablero[2]==tablero[6]){
+            if(tablero[2]!="-")
+            alert("Ganador");
+
+        }  
+
+        if(tablero[1]==tablero[4]&&tablero[1]==tablero[7]){
+            if(tablero[1]!="-")
+            alert("Ganador");
+        }  
+        if(tablero[3]==tablero[4]&&tablero[3]==tablero[5]){
+            if(tablero[3]!="-")
+            alert("Ganador");
+        }  
+        
+
+
+
+
+    }
+
+
+    
+    
+
+    </script>
+
+    
+</body>
+</html>
