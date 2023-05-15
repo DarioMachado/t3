@@ -1,0 +1,70 @@
+
+
+
+
+
+.boton {
+  align-items: center;
+  background-color: black;
+  border: 2px solid black;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+.boton:hover {
+  background-color: white;
+  border-color: white;
+  fill: white;
+  color:black
+}
+
+.boton:active {
+    background-color: white;
+    border-color: white;
+    fill: white;
+    color:orange;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}
+
+
+
+
+select {
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  select option:hover {
+    background-color: black;
+    color: white;
+  }
