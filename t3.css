@@ -1,4 +1,112 @@
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+h1{
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  background-color: black;
+  margin-top: 70px; 
+  width: 100%;
+  left:0;
+  padding-left:0px;
+  margin-left: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+    
+        * {cursor: url('./cursor.cur'), auto !important; 
+          font-family: 'VT323', monospace;
+           }
+    
+        #cursor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            pointer-events: none; 
+            z-index: 9999 !important;
+      }
+
+
+      body{
+        background-image: linear-gradient(to top right, #FF8133, #FF9933);
+        overflow-x: hidden;
+      }
+
+      .triangulo-eq-inf{
+        position: relative;
+        bottom:-8px;
+        left:-15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width:  0 0 80px 100vw;
+        border-color: transparent transparent black transparent;
+        overflow: hidden;
+      }
+
+      .triangulo-eq-sup{
+        position: relative;
+        top:-8px;
+        left:-10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 80px 100vw 0 0px; /* Clockwise: top, right, bottom, left */
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-color: black transparent transparent transparent;
+      }
+
+
+
+
+#modal {
+  position:relative;
+  z-index: 10 !important;
+  background-color: black;
+  color: white;
+
+}
 
 
 
