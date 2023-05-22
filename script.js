@@ -43,7 +43,6 @@ var fuente = window.localStorage.getItem('fontsize');
 
 if(fuente){
   document.documentElement.style.fontSize = fuente;
- 
 }
 
 var storedValue = window.localStorage.getItem('selectedOption');
@@ -72,3 +71,23 @@ openModalButton.addEventListener('click', () => {
 closeModalButton.addEventListener('click', () => {
   modal.close();
 });
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var clickableSections = document.querySelectorAll('.mostrarmas');
+
+  clickableSections.forEach(function(section) {
+    var button = section.querySelector('p');
+    var additionalText = section.querySelector('.additional-text');
+
+    button.addEventListener('click', function() {
+      additionalText.style.display = additionalText.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+});
+
