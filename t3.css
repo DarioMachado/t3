@@ -185,23 +185,25 @@ select {
 
   .main {
     width: 80vw;
-    height: 0;
+    height: auto;
     margin: 15vh auto 0; 
     background-color: black;
     text-align: center;
     color: white;
     padding-top: 80%;
     position: relative;
+
   }
 
 
  
 .contenidomain {
   position: absolute;
-  top: 0; /* Position the text at the top of the square */
+  top: 0; 
   left: 50%;
   transform: translateX(-50%);
   color: white;
+
 }
 
 
@@ -211,6 +213,7 @@ select {
   color: white; 
   width: 79vw;
   padding: 10px;
+  user-select: text;
 }
 
 .mostrarmas{
@@ -220,5 +223,6 @@ select {
   padding: 1px;
   width: 80vw;
   margin: 0;
+  user-select: none;
 }
 
