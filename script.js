@@ -59,8 +59,8 @@ document.getElementById('fuente').value = "1.0";
 
 
 
-const openModalButton = document.getElementById('open-modal');
-const closeModalButton = document.getElementById('close-modal');
+const openModalButton = document.getElementById('abrir');
+const closeModalButton = document.getElementById('cerrar');
 const modal = document.getElementById('modal');
 console.log(openModalButton);
 
