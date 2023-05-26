@@ -7,11 +7,13 @@
          <style>
            *{cursor: auto !important;
            }
-            .estrofa {
-            background: linear-gradient(to right, #B22234 0%, #B22234 20%, #FFFFFF 20%, #FFFFFF 40%, #B22234 40%, #B22234 60%, #FFFFFF 60%, #FFFFFF 80%, #B22234 80%, #B22234 100%);
-            background-size: 50px 100%;
-            background-repeat: repeat-x;
-          }
+           .estrofa {
+  background-color: red;
+  background-image: linear-gradient(to bottom, white 50%, transparent 50%);
+  background-size: 100% 13.33%;
+  background-position: 0% 0%, 0% 13.33%;
+  background-repeat: repeat-x;
+}
          </style>
          <script>
           
