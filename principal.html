@@ -9,12 +9,15 @@
   
 
 </head>
+
+<!--Curiosidad, si usas un bloqueador de anuncios en esta página, se te llena la consola de cientos de mensajes de error.-->
 <body onload="seguir()">
  
   
   <header>
-    <h1>JUEGO DE DARÍO DAW</h1>
+    <h1>JUEGO DE DARÍO DAW</h1> 
   </header>
+  <div id="usuario">INICIAR SESIÓN</div>
   <nav>
     <ul>
       <li><a href="principal.html" class="boton">INICIO</a></li>
@@ -23,7 +26,7 @@
       <li><button id="abrir" class="boton">CONTACTO</button></li>
     </ul>
   </nav>
-
+  <!-- Si no puede ver este mensaje, debe de ser que no está usando la versión más nueva de firefox o safari, ambos implementaron dialog en 2022...-->
   <dialog id="modal">
     <h2>DARÍO</h2>
     <p>EL XML LO HE PUESTO EN EL "INICIO DE SESIÓN" EL CUAL SE ENCUENTRA ARRIBA LA DERECHA, <br>
@@ -34,6 +37,11 @@
 
   <div id="cursor"></div>
 
+<div class="contenedor">
+  <div class="vacio"></div>
+  <div class="vacio"></div>
+  <div class="vacio"></div>
+  <div class="vacio"></div>
   <div class="main">
     <div class="contenidomain">
       <br/>
@@ -45,43 +53,49 @@
 
       <br/>
 
-      <div class="mostrarmas">
-        <p>LA INTERFAZ</p>
-        <div class="additional-text">
-          <p>This is the additional text that gets revealed.</p>
-          <p>It can include more content or any other HTML elements.</p>
+      <details class="mostrarMas">
+        <summary>LA INTERFAZ</summary>
+        <div class="textoOculto">
+          <p>IMPORTANTE VER ESTA ADVERTENCIA ANTES DE SEGUIR.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ysdPb1QSJSE"  frameborder="0"  allowfullscreen></iframe>
+          <p>¡Nunca has visto una interfaz así!</p><br>
+          <p>¿Nuestro secreto? ¡Referencias que nadie entiende!</p><br>
+          <img src="https://i.gyazo.com/f8351cf043af326151c2b244487b5f22.png" alt="interfaz"><br>
+          <p>¿De dónde he copiado la interfaz? ¡Exacto! ¡Nadie lo sabe! Es casi como si la interfaz fuese original. </p>
+
         </div>
-      </div>
+      </details>
 
       <br/>  <br/>
-      <div class="mostrarmas">
-        <p>LA MÚSICA</p>
-        <div class="additional-text">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/EyfvIrrrZJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <p>This is the additional text that gets revealed.</p>
-          <p>It can include more content or any other HTML elements.</p>
+      <details class="mostrarMas">
+        <summary>LA MÚSICA</summary>
+        <div class="textoOculto">
+          <p>¡Las mejores canciones que existen, precisamente <del>robadas</del> compuestas para este juego!</p><br>
+          <p>A continuación adjunto mi película favorita para rellenar algo de espacio y que parezca que hay más contenido del que hay realmente.</p><br>
+          <p>Lo siento es sábado a las 5 de la mañana me estoy volviendo loco perdón quiero irme a la cama</p>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/NAh9oLs67Cw"  frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
+      </details>
 
       <br/>  <br/>
-      <div class="mostrarmas">
-        <p>LAS BASES DE DATOS</p>
-        <div class="additional-text">
+      <details class="mostrarMas">
+        <summary>LAS BASES DE DATOS</summary>
+        <div class="textoOculto">
           <img src="https://i.gyazo.com/965adb0fc54e4513856dc0b72e91489f.png" alt="base de datos">
           <p>¡Las base de datos son muy divertidas!</p><br>
           <p>Para poder jugar a nuestro juego, es obligatorio registrarse, usando un correo real ya que se envía un código de verificación.</p><br>
           <img src="https://i.gyazo.com/697e00eeb428f4e9e7c54662d412c3fb.png" alt="spam">
           <p>Las contraseñas no se guardan en texto plano, ¡pero tu correo eléctronico se guarda de la forma más insegura posible!</p><br>
           <p>El thrill de ser spameado por correo basura... No todos los juegos te otorgan esa posibilidad</p>
-
         </div>
-      </div>
+        </details>
+      
       <br/>
       <br/>
 
-      <summary class="mostrarmas">
-        <p>LAS OPCIONES</p>
-        <div class="additional-text">
+      <details class="mostrarMas">
+        <summary>LAS OPCIONES</summary>
+        <div class="textoOculto">
           <p>El juego contiene nuevas y revolucionarias tecnologías de opciones. Puedes, por ejemplo, cambiar el volumen desde el propio juego, gracias a la ayuda de unos sliders.<br>
           ¡Olvídate de tener que cambiar el volumen de todo tu pc solo para poder escuchar el juego más alto!</p><br>
           <img src="https://i.gyazo.com/599784bf54086e3b85ec328289d23154.png" alt="opciones de volumen">
@@ -91,12 +105,23 @@
           ¡Por suerte, este juego no ha sido desarrollado en la Unión Soviética, así que eres libre de elegir qué teclas quieres usar para jugar!</p> <br>
           <img src="https://i.gyazo.com/dc0faafd30cf0e11d5e4e2bef51362c8.png" alt="opciones de binding">
         </div>
-      </div>
+      </details>
+
+   
+
+
+
   
     </div>
   </div>
 
+  <div class="vacio"></div>
+  <div class="vacio"></div>
+  <div class="vacio"></div>
+  <div class="vacio"></div>
 
+
+</div>
 
 
 

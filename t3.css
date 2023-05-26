@@ -18,7 +18,7 @@ h1{
 nav {
   position: fixed;
   background-color: black;
-  margin-top: -6vh; 
+  margin-top: 8vh; 
   width: 100%;
   left:0;
   padding-left:0px;
@@ -144,8 +144,7 @@ nav ul li a:hover {
 .boton:hover {
   background-color: white;
   border-color: white;
-  fill: white;
-  color:black
+  color:black !important; /* CSS MY BELOVED*/
 }
 
 .boton:active {
@@ -185,14 +184,15 @@ select {
 
   .main {
     width: 80vw;
-    height: auto;
+    height: 100vh;
     margin: 15vh auto 0; 
     background-color: black;
     text-align: center;
     color: white;
     padding-top: 80%;
     position: relative;
-
+    user-select: none;
+    display: flex;
   }
 
 
@@ -203,12 +203,12 @@ select {
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  
 
 }
 
 
-.additional-text {
-  display: none;
+.textoOculto{
   background-color: black; 
   color: white; 
   width: 79vw;
@@ -216,13 +216,36 @@ select {
   user-select: text;
 }
 
-.mostrarmas{
+.mostrarMas{
   
   background-color: white;
   color: black;
-  padding: 1px;
-  width: 80vw;
+  padding: 6px;
+  width: 79vw;
   margin: 0;
-  user-select: none;
+  
 }
 
+
+summary{
+  font-size: 1.8rem;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#usuario {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index:50;
+    color:white;
+  }

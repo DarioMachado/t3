@@ -29,7 +29,9 @@ function aplicarCambios() {
 
 var colorGuardado = window.localStorage.getItem('colorCursor');
 if (colorGuardado) {
+ 
   document.getElementById('cursor').style.backgroundColor = colorGuardado;
+  
   try{
   document.getElementsByName('colorElegido')[0].value = colorGuardado;
   }catch{
@@ -54,40 +56,45 @@ if (storedValue) {
   }
 }
 else{
+  try{
 document.getElementById('fuente').value = "1.0";
+    }catch{
+      console.log('Esta no es la página de configuración. LOL!');
+    }
 }
 
 
 
-const openModalButton = document.getElementById('abrir');
-const closeModalButton = document.getElementById('cerrar');
-const modal = document.getElementById('modal');
-console.log(openModalButton);
+var abrir = document.getElementById('abrir');
+var cerrar = document.getElementById('cerrar');
+var modal = document.getElementById('modal');
 
-openModalButton.addEventListener('click', () => {
+
+abrir.addEventListener('click', () => {
   modal.showModal();
 });
 
-closeModalButton.addEventListener('click', () => {
+cerrar.addEventListener('click', () => {
   modal.close();
 });
 
+var usuario = document.getElementById('usuario');
+var sesion =  sessionStorage.getItem('nombre');
+console.log('hola');
+
+if(sesion){
+  usuario.innerHTML=sesion;
+}
+else{
+  usuario.classList.add('boton');
+  usuario.addEventListener('click', logearse);
+}
+
+function logearse() {
+  window.location.href = 'login.xml';
+}
 
 
 
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  var clickableSections = document.querySelectorAll('.mostrarmas');
-
-  clickableSections.forEach(function(section) {
-    var button = section.querySelector('p');
-    var additionalText = section.querySelector('.additional-text');
-
-    button.addEventListener('click', function() {
-      additionalText.style.display = additionalText.style.display === 'none' ? 'block' : 'none';
-    });
-  });
-});
 

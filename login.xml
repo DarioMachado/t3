@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="login.xsl"?>
+
+
+<login xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<titulo>PANTALLA DE LOGIN</titulo>
+	
+	<descripcion>Escribe tu nombre en la casilla de abajo</descripcion>
+	
+	<caja></caja>
+	
+	<boton>APLICAR</boton>
+	
+	<cancion>
+		<nombre>Por si acaso añado</nombre>
+		<descripcion>La letra de una canción, ya que a lo mejor literalmente 4 etiquetas de xml no le parecen suficiente. O cree que no he hecho buen uso del XML usándolo para el login, y una canción siempre da resultados.</descripcion>
+		<letra>
+			
+				  <estrofa>
+				   <verso> Eighteen naked cowboys in the showers at Ram Ranch</verso>
+				    <verso>Big hard throbbing cocks wanting to be sucked</verso>
+				    <verso>Eighteen naked cowboys wanting to be fucked</verso>
+				    <verso>Cowboys in the showers at Ram Ranch</verso>
+				    <verso>On their knees wanting to suck cowboy cocks</verso>
+				    <verso>Ram Ranch really rocks</verso>
+				  </estrofa>
+				  <estrofa>
+				    <verso>Hot hard buff cowboys, their cocks throbbing hard</verso>
+				    <verso>Eighteen more wild cowboys out in the yard</verso>
+				    <verso>Big bulging cocks ever so hard</verso>
+				  </estrofa>
+				  <estrofa>
+				    <verso>Orgy in the showers at Ram Ranch</verso>
+				    <verso>Big hard throbbing cocks ramming cowboy butt</verso>
+				    <verso>Like a breeding ram wanting to rut</verso>
+				  </estrofa>
+				  <estrofa>
+				    <verso>Big hard throbbing cocks getting sucked real deep</verso>
+				    <verso>Cowboys even getting fucked in their sleep</verso>
+				    <verso>Ram Ranch, it rocks</verso>
+				    <verso>Cowboys love big hard throbbing cocks</verso>
+				  </estrofa>
+				  <estrofa>
+				   <verso> Eighteen naked cowboys in the showers at Ram Ranch</verso>
+				  <verso>  Big hard throbbing cocks wanting to be sucked</verso>
+				  <verso>  Eighteen naked cowboys wanting to be fucked</verso>
+				 <verso>   Cowboys in the showers at Ram Ranch</verso>
+				 <verso>   On their knees wanting to suck cowboy cocks</verso>
+				 <verso>   Ram Ranch really rocks</verso>
+				  </estrofa>
+
+
+			
+			
+			
+		</letra>
+		
+		
+		
+		
+	</cancion>
+	
+</login>
