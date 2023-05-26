@@ -9,12 +9,15 @@
            }
 .estrofa {
   background: repeating-linear-gradient(0deg, red, red 40px, white 40px, white 80px);
-  color: white; /* Set text color to white */
+  color: white;
 }
 
 .estrofa .verso {
-  background-color: blue; /* Set the background color of the verses to blue */
-  display: inline; /* Display verses as inline elements */
+  background-color: blue;
+}
+
+.estrofa .verso:nth-child(-n+5) {
+  color: red; /* Style the first 5 letters in red */
 }
          </style>
          <script>
