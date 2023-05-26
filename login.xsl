@@ -16,8 +16,8 @@
   background-color: blue;
 }
 
-.estrofa .verso:nth-child(-n+5) {
-  color: red; /* Style the first 5 letters in red */
+.estrofa .verso span:nth-child(-n+5) {
+  color: red; /* Style the first 5 characters in red */
 }
          </style>
          <script>
