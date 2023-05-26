@@ -7,18 +7,20 @@
          <style>
            *{cursor: auto !important;
            }
-.estrofa {
-  background: repeating-linear-gradient(0deg, red, red 40px, white 40px, white 80px);
-  color: white;
-}
-
-.estrofa .verso {
-  background-color: blue;
-}
-
-.estrofa .verso span:nth-child(-n+5) {
-  color: red; /* Style the first 5 characters in red */
-}
+           .verso{
+           color:blue;
+             font-weight: bold;
+			  text-indent: 20px;
+			           }
+			
+			 
+			.verso:nth-child(even) {
+			  background-color: white;
+			}
+			
+			.verso:nth-child(odd) {
+			  background-color: red;
+			}
          </style>
          <script>
           

@@ -80,7 +80,7 @@ cerrar.addEventListener('click', () => {
 
 var usuario = document.getElementById('usuario');
 var sesion =  sessionStorage.getItem('nombre');
-console.log('hola');
+
 
 if(sesion){
   usuario.innerHTML=sesion;
