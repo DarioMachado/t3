@@ -9,6 +9,11 @@
            }
   .estrofa {
   background: repeating-linear-gradient(0deg, red, red 40px, white 40px, white 80px);
+  color: white; 
+}
+
+.estrofa .verso {
+  background-color: blue; 
 }
          </style>
          <script>
