@@ -7,13 +7,14 @@
          <style>
            *{cursor: auto !important;
            }
-  .estrofa {
+.estrofa {
   background: repeating-linear-gradient(0deg, red, red 40px, white 40px, white 80px);
-  color: white; 
+  color: white; /* Set text color to white */
 }
 
 .estrofa .verso {
-  background-color: blue; 
+  background-color: blue; /* Set the background color of the verses to blue */
+  display: inline; /* Display verses as inline elements */
 }
          </style>
          <script>
